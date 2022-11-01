@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row mb-3">
     <div class="col-xl-8 col-md-12">
         <h1><?php bloginfo('title'); ?></h1>
         <h2><?php bloginfo('description'); ?></h2>

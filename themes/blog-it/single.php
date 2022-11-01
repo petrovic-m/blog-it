@@ -3,14 +3,8 @@
 <div class="col-xl-8 col-md-12 mx-auto">
 	<?php get_template_part('template-parts/header/desc-text') ?>
 	<?php get_template_part('template-parts/banner/header', 'blog') ?>
-    <div class="row">
-    <?php if(have_posts()):
-			while (have_posts()):
-				the_post(); ?>
-    <?php get_template_part('template-parts/blog/blog', 'container') ?>
-	<?php
-		endwhile;
-		endif;
-	?>
-    </div>
-<?php get_footer(); ?>
+	<div class="row">
+        <?php get_template_part('template-parts/blog/single', 'blog') ?>
+		<?php get_template_part('template-parts/blog/blog', 'container-left') ?>
+	</div>
+	<?php get_footer(); ?>
